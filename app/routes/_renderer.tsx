@@ -19,7 +19,7 @@ export default jsxRenderer(({ children, title, description }) => {
         <Script src="/app/client.ts" />
         {import.meta.env.PROD ? (
           <link
-            href="https://sivchari.github.io/sivchari/static/assets/style.css"
+            href="https://sivchari.github.io/x/static/assets/style.css"
             rel="stylesheet"
           />
         ) : (
@@ -33,14 +33,17 @@ export default jsxRenderer(({ children, title, description }) => {
       <body class="main-container">
         <header class="bg-lime-500">
           <div class="max-w-screen-2xl mx-auto flex h-16 items-center justify-between px-6">
-            <a href="/" class="text-white text-base font-bold">
+            <a
+              href="https://sivchari.github.io/x/"
+              class="text-white text-base font-bold"
+            >
               research!sivchari
             </a>
             <div class="flex items-center gap-2">
               <a href={LINK.X} target={"_blank"} rel={"noreferrer"} class="p-2">
                 {import.meta.env.PROD ? (
                   <img
-                    src="https://sivchari.github.io/sivchari/static/x.svg"
+                    src="https://sivchari.github.io/x/static/x.svg"
                     alt="x-icon"
                     class="w-7 h-7"
                   />
@@ -56,7 +59,7 @@ export default jsxRenderer(({ children, title, description }) => {
               >
                 {import.meta.env.PROD ? (
                   <img
-                    src="https://sivchari.github.io/sivchari/static/github.svg"
+                    src="https://sivchari.github.io/x/static/github.svg"
                     alt="github-icon"
                     class="w-7 h-7 text-white"
                   />
